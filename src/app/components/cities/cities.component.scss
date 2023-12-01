@@ -1,0 +1,31 @@
+:host {
+
+  .cities-main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+
+    h1 {
+      text-decoration: underline;
+    }
+
+    .city-card-container {
+      width: 500px;
+      height: 700px;
+      padding: 15px;
+      overflow-y: auto;
+      margin-top: 10px;
+
+      .city-card {
+        margin-top: 2.5px;
+        margin-bottom: 2.5px;
+        cursor: pointer;
+
+        &:hover {
+          border: 2px solid green;
+        }
+      }
+    }
+  }
+}

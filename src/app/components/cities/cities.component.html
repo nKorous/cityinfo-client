@@ -1,0 +1,14 @@
+<div class="cities-main-container">
+  <h1>Cities ({{ cityList.length }}):</h1>
+
+  <div class="city-card-container">
+    <mat-card class="city-card" *ngFor="let city of cityList" (click)="handleCityClick(city.id)">
+      <mat-card-header>
+        <mat-card-title>{{ city.name }}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>{{ city.description }}</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
